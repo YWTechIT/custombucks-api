@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "name": "tags",
+    "description": ""
+  },
+  "options": {
+    "privateAttributes": [
+      "published_at",
+      "created_at",
+      "updated_at",
+      "recipe"
+    ],
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "catalog": {
+      "type": "string"
+    }
+  }
+}

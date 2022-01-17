@@ -2,9 +2,11 @@
   "kind": "collectionType",
   "collectionName": "recipes",
   "info": {
-    "name": "recipes"
+    "name": "recipes",
+    "description": ""
   },
   "options": {
+    "privateAttributes": ["published_at", "created_at", "updated_at", "fakeIngredient"],
     "increments": true,
     "timestamps": true,
     "draftAndPublish": true
@@ -12,10 +14,46 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "desc": {
-      "type": "text"
+      "type": "text",
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "likes": {
+      "type": "integer",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "ICED_BEVERAGES",
+        "HOT_BEVERAGES"
+      ],
+      "required": true
+    },
+    "src": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "pluginOptions": {}
+    },
+    "steps": {
+      "collection": "steps",
+      "via": "recipe"
+    },
+    "tags": {
+      "collection": "tags"
     }
   }
 }

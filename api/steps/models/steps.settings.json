@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "steps",
+  "info": {
+    "name": "steps",
+    "description": ""
+  },
+  "options": {
+    "privateAttributes": ["published_at", "created_at", "updated_at", "recipe"],
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ingredient": {
+      "type": "string"
+    },
+    "fakeIngredient": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "integer"
+    },
+    "quantity": {
+      "type": "enumeration",
+      "enum": [
+        "없이",
+        "적게",
+        "보통",
+        "많이",
+        "Tall",
+        "Grande",
+        "Venti"
+      ]
+    },
+    "recipe": {
+      "via": "steps",
+      "model": "recipes"
+    }
+  }
+}

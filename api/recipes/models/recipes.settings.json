@@ -6,7 +6,7 @@
     "description": ""
   },
   "options": {
-    "privateAttributes": ["published_at", "created_at", "updated_at", "fakeIngredient"],
+    "privateAttributes": ["published_at", "created_at", "updated_at"],
     "increments": true,
     "timestamps": true,
     "draftAndPublish": true

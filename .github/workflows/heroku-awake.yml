@@ -1,8 +1,8 @@
-name: Heroku Awake every half hour
+name: Heroku Awake
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/30 * * * *"  # every 30 minutes
 
 jobs:
   build:

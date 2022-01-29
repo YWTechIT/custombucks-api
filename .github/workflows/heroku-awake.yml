@@ -1,14 +1,14 @@
-name: Heroku Awake
+# name: Heroku Awake
 
-on:
-  schedule:
-    - cron: "*/360 * * * *"  # every 360 minutes
+# on:
+#   schedule:
+#     - cron: "*/360 * * * *"  # every 360 minutes
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - uses: mikeesto/heroku-awake@1.0.0
-        with:
-          URL: "https://custombucks-api.herokuapp.com/"
+#     steps:
+#       - uses: mikeesto/heroku-awake@1.0.0
+#         with:
+#           URL: "https://custombucks-api.herokuapp.com/"

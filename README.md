@@ -1,5 +1,6 @@
 ### Custombucks API
 - deploy: https://custombucks-api.herokuapp.com/recipes
+- test
 
 ### ❏ Stack
 - DB: postgre
